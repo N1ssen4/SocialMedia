@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<form action="">
-    <label for="name">Write your name</label>
-    <input type="text" id="name">
+<form action="/dashboard" method="post">
+    <label for="title">Title:</label> <br>
+    <input id="title" type="text" name="title" placeholder="Write your title here..."> <br>
+
+    <label for="content">Content:</label><br>
+    <input id="content" type="text" name="content" placeholder="What's on your mind?"> <br>
+
+    <label for="date">Date:</label> <br>
+    <input id="date" type="date" name="dato"> <br>
+
+    <input type="color" name="color"> <br>
+
+    <label for="private"> Private</label>
+    <input type="checkbox" id="private"> <br>
+
+    <button type="submit"> Create post</button>
 </form>
 </body>
 </html>
+
